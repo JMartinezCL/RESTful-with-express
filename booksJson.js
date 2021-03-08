@@ -30,7 +30,7 @@ db.books.insert([
         read: true
     },
     {
-        title:'"Designing Evolvable Web APIs with ASP.NET',
+        title:'Designing Evolvable Web APIs with ASP.NET',
         genre:'.NET',
         author:'Glenn Block, et al.',
         read: false
