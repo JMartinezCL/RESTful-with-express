@@ -1,6 +1,6 @@
 db.books.insert([
     {
-        title:'"Eloquent JavaScript, Second Edition',
+        title:'Eloquent JavaScript, Second Edition',
         genre:'javascript',
         author:'Marijn Haverbeke',
         read: false
