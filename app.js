@@ -7,7 +7,16 @@ const bookRouter = express.Router();
 const port = process.env.PORT || 3000;
 const Book = require('./models/bookModel');
 
-bookRouter.route('/books').get((req, res) => {
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+
+bookRouter.route('/books')
+.post((req, res) => {
+  const book = new Book(req.body);
+  console.log(book);
+  return res.json(book);
+})
+.get((req, res) => {
   const query = {};
   if(req.query.genre){
     query.genre = req.query.genre;
